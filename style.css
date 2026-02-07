@@ -1,0 +1,29 @@
+* {
+    /* box-sizing: border-box; */
+    /* margin: 0; */
+    /* padding: 0; */
+}
+
+/* Base → Mobile (hasta 375px aprox) */
+body {
+    /* font-size: 14px; */
+    background: lightblue;
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+    body {
+        /* font-size: 16px; */
+        background: lightgreen;
+    }
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
