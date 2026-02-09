@@ -6,6 +6,10 @@ Some resources that I found.
 
 ---- Desafios
 - Como setear los fonts desde archivo .ttf en mi CSS
+- Como cambiar los colores de los puntitos de  Ul
+- como cambiar colores de una tabla
+- en una UL o OL como separar los punto de el contenido
+
 
 
   
