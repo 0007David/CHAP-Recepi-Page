@@ -7,13 +7,13 @@
 /* Font family */
 @font-face {
     font-family: Outfit;
-    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('ttf');
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
     /* - Weights: 400, 600, 700 */
 }
 
 @font-face {
     font-family: YoungSerif;
-    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('ttf');
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
     /* - Weights: 400 */
 }
 
@@ -43,6 +43,8 @@ html {
 body {
     background: var(--Stone100);
     font-family: var(--ff-primary);
+    font-weight: 400;
+    padding: 4.5rem;
 }
 
 main {
@@ -57,92 +59,113 @@ main {
 
 .img-recepi {
     height: 100%;
-    width: 95%;
+    width: 90%;
     border-radius: 20px;
-    margin: 1rem;
-
+    margin: 2.2rem;
 }
 
 .wrapper {
-    width: 80%;
-    /* text-align: center; */
+    width: 90%;
 }
 
 .title {
-    margin-top: 1.5rem;
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: inherit;
 }
 
 .description {
     margin: 1.5rem 0;
-    font-family: YoungSerif;
-    font-size: 1.2rem;
+    font-family: var(--ff-secondary);
+    font-size: 1.1rem;
     line-height: 1.5rem;
-    /* margin-left: 2rem; */
+    color: var(--Stone600);
 }
 
 .section-preparation {
     background: var(--Rose50);
+    font-family: var(--ff-secondary);
     margin: 2rem 0;
-    padding: 2rem;
+    padding: 2rem 2rem 1.2rem;
     border-radius: 10px;
 }
 
 .title-peparation {
     margin-bottom: 1rem;
+    font-weight: 600;
     color: var(--Rose800);
 }
 
 .list-preparation {
-    color: var(--Rose800);
     padding-left: 2rem;
-    font-size: 1.2rem;
-}
-
-ul>li {
-    /* color: hsl(30, 10%, 34%); */
-    margin-bottom: 1rem;
-}
-
-.hightlight-bold {
-    font-weight: bold;
+    font-size: 1.1rem;
     color: var(--Stone600);
+}
+
+.list-preparation>li {
+    padding-left: 1.4rem;
+    margin-bottom: .7rem;
+}
+
+.list-preparation>li::marker {
+    color: var(--Rose800);
+}
+
+.list-preparation>li>span {
+    font-weight: bold;
 }
 
 .sub-title-ingredients {
     margin-bottom: 1rem;
     font-size: 2rem;
+    font-weight: 400;
     color: var(--Brown800);
 }
 
 .list-ingredients {
+    font-family: var(--ff-secondary);
+    color: var(--Stone600);
     padding: 0 1rem 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+}
 
+.list-ingredients>li {
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.list-ingredients>li::marker {
+    color: var(--Rose800);
 }
 
 hr {
-    width: 90%;
     margin-bottom: 2rem;
+    border: 0;
+    height: 1px;
+    background-color: var(--Stone150);
 }
 
-.subtitle-intructions {
+.sub-title-intructions {
     margin-bottom: 1rem;
     font-size: 2rem;
+    font-weight: 400;
     color: var(--Brown800);
 }
 
 .list-instructions {
-    padding-left: 2rem;
-    padding-right: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
+    font-family: var(--ff-secondary);
+    color: var(--Stone600);
+    padding: 0 1rem 1rem 2rem;
+    font-size: 1.1rem;
 }
 
 .list-instructions>li {
-    margin-bottom: 1rem;
-    color: var(--Stone600);
+    padding-left: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.list-instructions>li::marker {
+    color: var(--Rose800);
+    font-weight: bold;
 }
 
 .sub-title-nutricion {
@@ -151,13 +174,41 @@ hr {
     color: var(--Brown800);
 }
 
-/* Desktop */
-@media (min-width: 1440px) {
+@media (max-width: 850px) {
+
+    html,
     body {
-        /* font-size: 16px; */
-        background: var(--Stone100);
+        font-size: 16px;
+        padding: 0;
+    }
+
+    /* .img-recepi {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        margin: 0 2.2rem 2.2rem;
+    } */
+}
+
+/* movil */
+@media (max-width: 550px) {
+
+    html,
+    body {
+        font-size: 14px;
+        /* padding: 6rem; */
+        padding: 0;
+    }
+
+    .img-recepi {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        margin: 0 2.2rem 2.2rem;
     }
 }
+
+
 
 
 /* .attribution {

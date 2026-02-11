@@ -6,15 +6,61 @@ Some resources that I found.
 
 ---- Desafios
 - Como setear los fonts desde archivo .ttf en mi CSS
-- Como cambiar los colores de los puntitos de  Ul
+- Como cambiar los colores de los puntitos de  Ul/ OL
 - como cambiar colores de una tabla
 - en una UL o OL como separar los punto de el contenido
+- Hacer la parte de responsibe para dispositivos pequenio
 
-
-
+Menejo de disenio de la 
   
+how to set ul/li bullet point color?
+li::marker {
+  color: #3498db; /* Azul */
+}
 
-  
+li { color: red; } /* Punto rojo */
+li span { color: black; } /* Texto negro */
+
+how to set ul/li space between point and content?
+
+There thre solution
+1) Remove the default marker and fake it with a background image:
+li {
+    list-style-type:none;
+    background-image:url(bullet.png);
+}
+</style>
+
+<ul>
+    <li>Some text</li>
+</ul>
+
+2) Add more space by adding padding on the <li> tag (assumes list-style-position: outside, doesn't remove default spacing)
+<style type="text/css">
+ul {padding-left:1em}
+li {padding-left:1em}
+</style>
+
+<ul>
+    <li>Some text</li>
+</ul>
+
+3. Extend the list item beyond its box using a negative margin
+  <style type="text/css">
+li {
+    padding-left:1em;
+    color:#f00; /* red bullet */
+}
+li span {
+    display:block;
+    margin-left:-0.5em;
+    color:#000; /* black text */
+}
+</style>
+
+<ul>
+    <li><span>Some text</span></li>
+</ul>
 
   
   
