@@ -10,6 +10,8 @@ Some resources that I found.
 - como cambiar colores de una tabla
 - en una UL o OL como separar los punto de el contenido
 - Hacer la parte de responsibe para dispositivos pequenio
+- como Pseudocodigo Css el ultimo margen de row no debe aplicarse
+  table tr:not(:last-child)>td
 
 Menejo de disenio de la 
   
